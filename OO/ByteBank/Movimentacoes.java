@@ -1,5 +1,7 @@
 package OO.ByteBank;
 
+import OO.ByteBank.Model.Conta;
+
 public class Movimentacoes {
     
     public static void main(String[] args) {

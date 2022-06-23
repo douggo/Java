@@ -2,7 +2,7 @@
 
 Aqui teremos um compilado sobre os estudos do Java, utilizando a plataforma de ensino Alura.
 
-- [x] Basics (21/06/2022)
+- [x] Basics
 - [ ] Orientação a Objetos
 - [ ] Heranças e Interfaces
 - [ ] Coleções, Wrappers e Lambda Expressions

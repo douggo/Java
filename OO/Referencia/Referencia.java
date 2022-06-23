@@ -1,6 +1,6 @@
 package OO.Referencia;
 
-import OO.ByteBank.Conta;
+import OO.ByteBank.Model.Conta;
 
 public class Referencia {
     
@@ -14,7 +14,6 @@ public class Referencia {
         Conta contaUm = new Conta();
         contaUm.saldo = 450.99;
         contaUm.numero = 2;
-        contaUm.titular = "Douglas";
         Conta contaDois = contaUm;
         contaDois.saldo = 1540.99;
         imprimeDados(contaUm, "ContaUm");
@@ -25,11 +24,9 @@ public class Referencia {
         Conta contaUm = new Conta();
         contaUm.saldo = 450.99;
         contaUm.numero = 2;
-        contaUm.titular = "Douglas";
         Conta contaDois = new Conta();
         contaDois.saldo = 50;
         contaDois.numero = 2;
-        contaDois.titular = "Fulano";
         imprimeDados(contaUm, "ContaUm");
         imprimeDados(contaDois, "ContaDois");
     }
@@ -38,7 +35,6 @@ public class Referencia {
         System.out.println("---- " + titulo + " ----");
         System.out.println("Agencia: " + conta.agencia);
         System.out.println("Número: " + conta.numero);
-        System.out.println("Titular: " + conta.titular);
         System.out.println("Saldo: R$ " + conta.saldo);
         System.out.println("Referência: " + conta);
         System.out.println();
