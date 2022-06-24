@@ -6,7 +6,7 @@ public class Movimentacoes {
     
     public static void main(String[] args) {
         System.out.println();
-        Conta conta = new Conta();
+        Conta conta = new Conta(1337, 1234);
         realizaDeposito(conta, 300);
         System.out.println();
         System.out.println();
@@ -33,7 +33,7 @@ public class Movimentacoes {
     }
 
     private static void realizaTransferencia(Conta conta) {
-        Conta contaDois = new Conta();
+        Conta contaDois = new Conta(1337, 5678);
         double valor = 50;
         boolean sucesso = conta.transfere(contaDois, valor);
         if(sucesso) {

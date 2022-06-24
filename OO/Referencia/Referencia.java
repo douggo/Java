@@ -11,7 +11,7 @@ public class Referencia {
     }
 
     private static void atribuicaoPorReferencia() {
-        Conta contaUm = new Conta();
+        Conta contaUm = new Conta(1337, 1234);
         contaUm.setSaldo(450.99);
         contaUm.setNumero(2);
         Conta contaDois = contaUm;
@@ -21,10 +21,10 @@ public class Referencia {
     }
 
     private static void atribuicaoPorInstancia() {
-        Conta contaUm = new Conta();
+        Conta contaUm = new Conta(1337, 1234);
         contaUm.setSaldo(450.99);
         contaUm.setNumero(2);
-        Conta contaDois = new Conta();
+        Conta contaDois = new Conta(1337, 5678);
         contaDois.setSaldo(50);
         contaDois.setNumero(2);
         imprimeDados(contaUm, "ContaUm");

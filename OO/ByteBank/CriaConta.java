@@ -14,11 +14,11 @@ public class CriaConta {
         segundaConta.setAgencia(146);
         imprimeDados(primeiraConta, "PrimeiraConta");
         imprimeDados(segundaConta, "SegundaConta");
-
+        System.out.println("Total de contas criadas: " + primeiraConta.getTotal());
     }
 
     private static Conta criaConta(double saldoInicial) {
-        Conta conta = new Conta();
+        Conta conta = new Conta(1337, 1234);
         conta.setSaldo(saldoInicial);
         return conta;
     }
