@@ -19,7 +19,7 @@ public class Movimentacoes {
     private static void realizaDeposito(Conta conta, double valor) {
         conta.deposita(valor);
         System.out.println("Realizado um depósito de R$ " + valor);
-        System.out.println("Saldo atual: R$ " + conta.saldo);
+        System.out.println("Saldo atual: R$ " + conta.getSaldo());
     }
 
     private static void realizaSaque(Conta conta, double valor) {
@@ -29,7 +29,7 @@ public class Movimentacoes {
         } else {
             System.out.println("Valor (R$ " + valor + ") indisponível para saque!");
         }
-        System.out.println("Saldo atual: R$ " + conta.saldo);
+        System.out.println("Saldo atual: R$ " + conta.getSaldo());
     }
 
     private static void realizaTransferencia(Conta conta) {
@@ -48,7 +48,7 @@ public class Movimentacoes {
 
     private static void imprimeDados(Conta conta) {
         System.out.println("---- " + conta + " ----");
-        System.out.println("Saldo: R$ " + conta.saldo);
+        System.out.println("Saldo: R$ " + conta.getSaldo());
         System.out.println();
     }
 

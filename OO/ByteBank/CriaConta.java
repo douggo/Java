@@ -11,7 +11,7 @@ public class CriaConta {
         Conta segundaConta = criaConta(50);
         criaCliente(primeiraConta);
         criaCliente(segundaConta);
-        segundaConta.agencia = 146;
+        segundaConta.setAgencia(146);
         imprimeDados(primeiraConta, "PrimeiraConta");
         imprimeDados(segundaConta, "SegundaConta");
 
@@ -19,23 +19,23 @@ public class CriaConta {
 
     private static Conta criaConta(double saldoInicial) {
         Conta conta = new Conta();
-        conta.saldo = saldoInicial;
+        conta.setSaldo(saldoInicial);
         return conta;
     }
 
     private static void criaCliente(Conta conta) {
         Cliente cliente = new Cliente();
-        cliente.cpf = "123.456.789-00";
-        cliente.nome = "Douglas";
-        cliente.profissao = "Desenvolvedor";
-        conta.titular = cliente;
+        cliente.setCpf("123.456.789-00");
+        cliente.setNome("Douglas");
+        cliente.setProfissao("Desenvolvedor");
+        conta.setTitular(cliente);
     }
 
     private static void imprimeDados(Conta conta, String titulo) {
         System.out.println("---- " + titulo + " ----");
-        System.out.println("Agencia: " + conta.agencia);
-        System.out.println("Titular: " + conta.titular.nome + " - " + conta.titular.cpf);
-        System.out.println("Saldo: R$ " + conta.saldo);
+        System.out.println("Agencia: " + conta.getAgencia());
+        System.out.println("Titular: " + conta.getTitular().getNome() + " - " + conta.getTitular().getCpf());
+        System.out.println("Saldo: R$ " + conta.getSaldo());
         System.out.println();
     }
 

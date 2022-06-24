@@ -12,30 +12,30 @@ public class Referencia {
 
     private static void atribuicaoPorReferencia() {
         Conta contaUm = new Conta();
-        contaUm.saldo = 450.99;
-        contaUm.numero = 2;
+        contaUm.setSaldo(450.99);
+        contaUm.setNumero(2);
         Conta contaDois = contaUm;
-        contaDois.saldo = 1540.99;
+        contaDois.setSaldo(1540.99);
         imprimeDados(contaUm, "ContaUm");
         imprimeDados(contaDois, "ContaDois");
     }
 
     private static void atribuicaoPorInstancia() {
         Conta contaUm = new Conta();
-        contaUm.saldo = 450.99;
-        contaUm.numero = 2;
+        contaUm.setSaldo(450.99);
+        contaUm.setNumero(2);
         Conta contaDois = new Conta();
-        contaDois.saldo = 50;
-        contaDois.numero = 2;
+        contaDois.setSaldo(50);
+        contaDois.setNumero(2);
         imprimeDados(contaUm, "ContaUm");
         imprimeDados(contaDois, "ContaDois");
     }
 
     private static void imprimeDados(Conta conta, String titulo) {
         System.out.println("---- " + titulo + " ----");
-        System.out.println("Agencia: " + conta.agencia);
-        System.out.println("Número: " + conta.numero);
-        System.out.println("Saldo: R$ " + conta.saldo);
+        System.out.println("Agencia: " + conta.getAgencia());
+        System.out.println("Número: " + conta.getNumero());
+        System.out.println("Saldo: R$ " + conta.getSaldo());
         System.out.println("Referência: " + conta);
         System.out.println();
     }
