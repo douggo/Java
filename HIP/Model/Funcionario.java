@@ -1,4 +1,4 @@
-package HIP;
+package HIP.Model;
 
 public class Funcionario {
 
