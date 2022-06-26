@@ -1,6 +1,6 @@
 package HIP.Heranca;
 
-import HIP.Heranca.Model.Funcionario;
+import HIP.Heranca.Model.SuporteTecnico;
 import HIP.Heranca.Model.Gerente;
 
 public class CriaFuncionario {
@@ -12,7 +12,7 @@ public class CriaFuncionario {
     }
 
     private static void criaFuncionario() {
-        Funcionario f1 = new Funcionario();
+        SuporteTecnico f1 = new SuporteTecnico();
         f1.setNome("Douglas");
         f1.setCPF("123.123.123-00");
         f1.setSalario(2600.00);

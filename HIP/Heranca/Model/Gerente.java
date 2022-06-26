@@ -4,8 +4,10 @@ public class Gerente extends Funcionario {
 
     private int senha;
 
-    public void setSenha(int senha) {
-        this.senha = senha;
+    @Override
+    public double getBonificacao() {
+        // `super` para definir que o método/atributo está na classe-mãe
+        return super.getSalario();
     }
 
     public boolean autentica(int senha) {
@@ -25,10 +27,8 @@ public class Gerente extends Funcionario {
         return true;
     }
 
-    @Override
-    public double getBonificacao() {
-        // `super` para definir que o método/atributo está na classe-mãe
-        return super.getBonificacao() + super.getSalario();
+    public void setSenha(int senha) {
+        this.senha = senha;
     }
 
 }

@@ -1,6 +1,6 @@
 package HIP.Bytebank.Model;
 
-public class Conta {
+public abstract class Conta {
     private Cliente titular;
     private int agencia;
     private int numero;

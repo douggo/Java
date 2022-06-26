@@ -12,17 +12,12 @@ public class TestaControleFinanceiro {
         Gerente g1 = new Gerente();
         g1.setNome("Guilherme");
         g1.setSalario(3540.99);
-
-        Funcionario f1 = new Funcionario();
-        f1.setNome("Douglas");
-        f1.setSalario(2540.32);
         
         SuporteTecnico st1 = new SuporteTecnico();
         st1.setNome("Matheus");
         st1.setSalario(1500.00);
         
         registra(g1);
-        registra(f1);
         registra(st1);
 
         System.out.println("Soma da bonificação: R$ " + getTotal());
