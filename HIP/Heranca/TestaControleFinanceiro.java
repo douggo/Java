@@ -1,8 +1,8 @@
-package HIP;
+package HIP.Heranca;
 
-import HIP.Model.Funcionario;
-import HIP.Model.Gerente;
-import HIP.Model.SuporteTecnico;
+import HIP.Heranca.Model.Funcionario;
+import HIP.Heranca.Model.Gerente;
+import HIP.Heranca.Model.SuporteTecnico;
 
 public class TestaControleFinanceiro {
     

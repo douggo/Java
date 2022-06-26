@@ -1,4 +1,4 @@
-package HIP.Model;
+package HIP.Heranca.Model;
 
 public class Gerente extends Funcionario {
 
