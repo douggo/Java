@@ -1,8 +1,8 @@
-package HIP.Heranca;
+package HIP.EnterpriseManagement.UseCase;
 
-import HIP.Heranca.Model.Administrador;
-import HIP.Heranca.Model.Gerente;
-import HIP.Heranca.UseCase.SistemaInterno;
+import HIP.EnterpriseManagement.Model.Administrador;
+import HIP.EnterpriseManagement.Model.Gerente;
+import HIP.EnterpriseManagement.Model.SistemaInterno;
 
 public class LogaSistema {
     

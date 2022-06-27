@@ -1,4 +1,4 @@
-package HIP.Heranca.Model;
+package HIP.EnterpriseManagement.Model;
 
 public abstract class Funcionario {
 

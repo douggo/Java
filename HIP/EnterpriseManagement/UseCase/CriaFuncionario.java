@@ -1,7 +1,7 @@
-package HIP.Heranca;
+package HIP.EnterpriseManagement.UseCase;
 
-import HIP.Heranca.Model.SuporteTecnico;
-import HIP.Heranca.Model.Gerente;
+import HIP.EnterpriseManagement.Model.Gerente;
+import HIP.EnterpriseManagement.Model.SuporteTecnico;
 
 public class CriaFuncionario {
     
@@ -27,10 +27,10 @@ public class CriaFuncionario {
         g1.setNome("Guilherme");
         g1.setCPF("123.456.678-99");
         g1.setSalario(4250.55);
-        g1.setSenha(2222);
+        //g1.setSenha(2222);
         g1.getBonificacao();
         System.out.println("Gerente: " + g1.getNome() + " - CPF: " + g1.getCPF());
-        System.out.println("Autenticado: " + g1.autentica(2222));
+        //System.out.println("Autenticado: " + g1.autentica(2222));
         System.out.println("Salário: " + g1.getSalario());
         System.out.println("Bonus: " + g1.getBonificacao());
         System.out.println();

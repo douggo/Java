@@ -1,13 +1,13 @@
-package HIP.Heranca.UseCase;
+package HIP.EnterpriseManagement.Model;
 
-import HIP.Heranca.Model.FuncionarioAutenticavel;
+import HIP.EnterpriseManagement.Interface.Autenticavel;
 
 public class SistemaInterno {
     
     private int senha = 1234;
 
-    public boolean autenticaFuncionario(FuncionarioAutenticavel funcionario) {
-        if(this.senha == funcionario.getSenha()) {
+    public boolean autenticaFuncionario(Autenticavel user) {
+        if(this.senha == user.getSenha()) {
             System.out.println("Usuário logado com sucesso!");
             return true;
         }
