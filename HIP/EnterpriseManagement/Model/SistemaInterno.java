@@ -7,7 +7,7 @@ public class SistemaInterno {
     private int senha = 1234;
 
     public boolean autenticaFuncionario(Autenticavel user) {
-        if(this.senha == user.getSenha()) {
+        if(user.autentica(this.senha)) {
             System.out.println("Usuário logado com sucesso!");
             return true;
         }

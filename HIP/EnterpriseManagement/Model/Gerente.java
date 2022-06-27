@@ -18,11 +18,6 @@ public class Gerente extends Funcionario implements Autenticavel {
     }
 
     @Override
-    public int getSenha() {
-        return this.senha;
-    }
-
-    @Override
     public boolean autentica(int senha) {
         return this.senha == senha;
     }
