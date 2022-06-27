@@ -1,6 +1,8 @@
 package HIP.Bytebank.Model;
 
-public class ContaCorrente extends Conta {
+import HIP.Bytebank.Interface.Tributavel;
+
+public class ContaCorrente extends Conta implements Tributavel {
     
     public ContaCorrente(int agencia, int numero, double valor) {
         super(agencia, numero, valor);
@@ -11,6 +13,11 @@ public class ContaCorrente extends Conta {
         /* Saques de Contas Correntes deverão ter uma taxa de R$ 0,20 em cima do valor */
         valor += 0.20;
         return super.saca(valor);
+    }
+
+    @Override
+    public double getValorImposto() {
+        return super.getSaldo() * 0.01;
     }
 
 }
