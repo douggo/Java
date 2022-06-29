@@ -12,7 +12,7 @@ public class RawArrayList {
     
     public static void main(String[] args) {
         System.out.println();
-        ArrayList array = criaArrayList();
+        ArrayList<Object> array = criaArrayList();
         System.out.println("Tamanho do ArrayList: " + array.size());
         array.iterator();
         System.out.println();
@@ -24,8 +24,8 @@ public class RawArrayList {
         System.out.println("Tamanho do ArrayList após o uso do clear(): " + array.size());
     }
 
-    private static ArrayList criaArrayList() {
-        ArrayList array = new ArrayList();
+    private static ArrayList<Object> criaArrayList() {
+        ArrayList<Object> array = new ArrayList<Object>();
         ContaCorrente cc1 = new ContaCorrente(1, 1, 350);
         ContaPoupanca cp1 = new ContaPoupanca(2, 1, 5450.5);
         Administrador adm = new Administrador();

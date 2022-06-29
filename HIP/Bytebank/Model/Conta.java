@@ -70,4 +70,19 @@ public abstract class Conta {
         return total;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(super.equals(obj)) {
+            return true;
+        }
+        Conta conta = (Conta) obj;
+        if(this.agencia != conta.agencia) {
+            return false;
+        }
+        if(this.numero != conta.numero) {
+            return false;
+        }
+        return true;
+    }
+
 }
