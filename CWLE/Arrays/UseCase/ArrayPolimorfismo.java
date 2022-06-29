@@ -1,4 +1,4 @@
-package CWLE;
+package CWLE.Arrays.UseCase;
 
 import HIP.Bytebank.Model.Conta;
 import HIP.Bytebank.Model.ContaCorrente;
