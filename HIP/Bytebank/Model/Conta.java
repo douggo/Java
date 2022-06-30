@@ -1,6 +1,6 @@
 package HIP.Bytebank.Model;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
     private Cliente titular;
     private int agencia;
     private int numero;
@@ -71,6 +71,11 @@ public abstract class Conta {
     }
 
     @Override
+    public String toString() {
+        return "Conta: " + this.agencia + " | Número: " + this.numero + " | Saldo: " + this.saldo;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(super.equals(obj)) {
             return true;
@@ -83,6 +88,11 @@ public abstract class Conta {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public int compareTo(Conta conta) {
+        return Double.compare(this.saldo, conta.saldo);
     }
 
 }
