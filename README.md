@@ -5,7 +5,7 @@ Aqui teremos um compilado sobre os estudos do Java, utilizando a plataforma de e
 - [x] Basics
 - [X] Orientação a Objetos (OO)
 - [X] Heranças, Interfaces e Polimorfismo (HIP)
-- [ ] Coleções, Wrappers e Lambda Expressions (CWLE)
+- [X] Coleções, Wrappers e Lambda Expressions (CWLE)
 - [ ] Streams, Readers e Writers (SRW)
 - [ ] Listas, Sets e Mapas (LSM)
 
