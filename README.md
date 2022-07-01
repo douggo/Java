@@ -16,3 +16,17 @@ Como identificado acima, cada curso disponibilizado no Alura fará parte de uma 
 ## Dicas importantes
 
 Até o momento nenhuma dica foi captada.
+
+@todo: descrever os itens abaixo de forma completa e com sanando todas as minhas dúvidas que surgiram após a conclusão dos cursos
+
+- Polimorfismo
+- Composição
+- Comparators
+- Classes anônimas
+- Lamdas
+- FileInputStream
+- InputStreamReader
+- BufferedReader
+- FileOutputStream
+- OutputStreamWriter
+- BufferedWriter
