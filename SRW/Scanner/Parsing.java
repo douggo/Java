@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class Parsing {
 
+    private static String charset = "UTF-8";
+
     public static void main(String[] args) {
         System.out.println();
         try {
@@ -17,7 +19,7 @@ public class Parsing {
     }
 
     private static void importaContas() throws IOException {
-        Scanner fileScanner = new Scanner(getFile());
+        Scanner fileScanner = new Scanner(getFile(), charset);
         while(fileScanner.hasNextLine()) {
             Scanner lineScanner = new Scanner(fileScanner.nextLine());
             lineScanner.useDelimiter(",");
@@ -37,12 +39,21 @@ public class Parsing {
         String nomeTitular = lineScanner.next();
         double saldo = lineScanner.nextDouble();
         String format = "%s %04d - %08d %n Nome: %s %n Saldo: R$ %05.2f";
-        String text = String.format(format, tipoConta, agencia, numero, nomeTitular, saldo);
-        System.out.println(text);
+        // String text = String.format(format, tipoConta, agencia, numero, nomeTitular, saldo);
+        // System.out.println(text);
+        System.out.format(
+            new Locale("pt", "BR"), 
+            format, 
+            tipoConta, 
+            agencia, 
+            numero, 
+            nomeTitular, 
+            saldo
+        );
     }
 
     private static File getFile() {
-        String filePath = "/home/douglas/IdeaProjects/Java/SRW/files/contas.csv";
+        String filePath = "/home/douglas/IdeaProjects/Java/SRW/files/new-contas.csv";
         return new File(filePath);
     }
 

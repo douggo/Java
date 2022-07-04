@@ -18,14 +18,14 @@ public class UsandoPrint {
     }
 
     private static void criaArquivoPrintStream() throws IOException {
-        PrintStream ps = new PrintStream(filePath + "print-stream.txt");
+        PrintStream ps = new PrintStream(filePath + "print-stream.txt", "UTF-8");
         ps.println("Criando arquivo usando a classe PrintStream!");
         ps.println("Que loucura!");
         ps.close();
     }
 
     private static void criaArquivoPrintWriter() throws IOException {
-        PrintWriter pw = new PrintWriter(filePath + "print-writer.txt");
+        PrintWriter pw = new PrintWriter(filePath + "print-writer.txt", "UTF-8");
         pw.println("Criando arquivo usando a classe PrintWriter!");
         pw.println("Que loucura! 2x");
         pw.close();

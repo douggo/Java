@@ -14,7 +14,7 @@ public class LendoLinhasArquivo {
         BufferedReader buffer1 = criaBuffer();
         BufferedReader buffer2 = criaBuffer();
         BufferedReader buffer3 = criaBuffer();
-        /* -> Imprimo cada linha disponível no arquivo */
+        /* -> Imprimo cada linha windows-1252disponível no arquivo */
         imprimindoLinhasNaMao(buffer1);
         System.out.println();
         System.out.println();
