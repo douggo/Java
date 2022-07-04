@@ -1,7 +1,9 @@
 package HIP.Bytebank.Model;
 
-public abstract class Conta implements Comparable<Conta> {
-    private Cliente titular;
+import java.io.Serializable;
+
+public abstract class Conta implements Comparable<Conta>, Serializable {
+    private /* transient */ Cliente titular; // transient torna o Cliente como não obrigatório na serialização
     private int agencia;
     private int numero;
     private double saldo;
