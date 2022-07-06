@@ -42,8 +42,18 @@ public class Curso {
         this.alunos.add(aluno);
     }
 
+    public boolean isAlunoMatriculado(Aluno aluno) {
+        return this.alunos.contains(aluno);
+    }
+
     public int getTempoTotal() {
         return this.aulas.stream().mapToInt(Aula::getTempo).sum();
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        Aluno aluno = (Aluno) obj;
+        return this.nome.equals(aluno.getNome());
     }
 
     @Override
