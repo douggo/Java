@@ -1,4 +1,4 @@
-package LSM.Recap.Sets;
+package LSM.Sets;
 
 import java.util.ArrayList;
 import java.util.Collection;
