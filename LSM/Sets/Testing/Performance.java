@@ -1,4 +1,4 @@
-package LSM.Sets;
+package LSM.Sets.Testing;
 
 import java.util.ArrayList;
 import java.util.Collection;

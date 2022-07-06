@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import LSM.Recap.Model.Aula;
+import LSM.Model.Aula;
 
 public class ManipulandoArrayListObjetos {
     

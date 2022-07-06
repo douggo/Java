@@ -1,4 +1,4 @@
-package LSM.Recap.Model;
+package LSM.Model;
 
 public class Aula implements Comparable<Aula> {
     

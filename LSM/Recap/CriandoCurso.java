@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import LSM.Recap.Model.Aula;
-import LSM.Recap.Model.Curso;
+import LSM.Model.Aula;
+import LSM.Model.Curso;
 
 public class CriandoCurso {
     
