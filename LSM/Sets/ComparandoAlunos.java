@@ -37,8 +37,6 @@ public class ComparandoAlunos {
             "alunos do curso contains alunoFromRequest (%b)%n", 
             curso.isAlunoMatriculado(alunoFromRequest)
         );
-        //System.out.format();
-        //System.out.format();
     }
 
 }
