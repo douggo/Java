@@ -5,7 +5,7 @@ import OO.ByteBank.Model.Conta;
 
 public class CriaConta {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         System.out.println();
         Conta primeiraConta = criaConta(300);
         Conta segundaConta = criaConta(50);

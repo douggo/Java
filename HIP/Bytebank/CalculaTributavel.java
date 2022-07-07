@@ -6,7 +6,7 @@ import HIP.Bytebank.Model.SeguroVida;
 
 public class CalculaTributavel {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         ContaCorrente cc = new ContaCorrente(1, 1, 0);
         cc.deposita(100);
 

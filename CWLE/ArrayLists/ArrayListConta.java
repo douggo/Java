@@ -8,7 +8,7 @@ import HIP.Bytebank.Model.ContaPoupanca;
 
 public class ArrayListConta {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         System.out.println();
         ArrayList<Conta> array = criaArrayListContas();
         System.out.println("Contas criadas:");

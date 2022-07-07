@@ -2,7 +2,7 @@ package Basics.Atribuições;
 
 public class PassByReference {
     
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         System.out.println();
         Pessoa doug = new Pessoa("Douglas", "19/03/1997", "123.456.789-00", 'M');
         Pessoa doug2 = doug;

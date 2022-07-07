@@ -9,7 +9,7 @@ import java.io.Writer;
 
 public class CriandoArquivo {
     
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException { 
         String file = "/home/douglas/IdeaProjects/Java/SRW/files/lorem-write.txt";
         OutputStream outputStream = new FileOutputStream(file);
         Writer writer = new OutputStreamWriter(outputStream);

@@ -1,9 +1,11 @@
 package LSM.Model;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Curso {
@@ -12,6 +14,7 @@ public class Curso {
     private String instrutor;
     private List<Aula> aulas = new LinkedList<Aula>();
     private Set<Aluno> alunos = new LinkedHashSet<Aluno>();
+    private Map<Integer, Aluno> matriculaAluno = new HashMap<Integer, Aluno>();
 
     /* Ao transformar o Aluno para TreeSet, deverá implementar a interface Comparable!! */
 
@@ -42,6 +45,7 @@ public class Curso {
 
     public void matriculaAluno(Aluno aluno) {
         this.alunos.add(aluno);
+        this.matriculaAluno.put(aluno.getMatricula(), aluno);
     }
 
     public boolean isAlunoMatriculado(Aluno aluno) {
@@ -50,6 +54,10 @@ public class Curso {
 
     public int getTempoTotal() {
         return this.aulas.stream().mapToInt(Aula::getTempo).sum();
+    }
+
+    public Aluno getAlunoFromMatricula(int matricula) {
+        return this.matriculaAluno.get(matricula);
     }
     
     @Override

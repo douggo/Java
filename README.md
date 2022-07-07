@@ -7,7 +7,7 @@ Aqui teremos um compilado sobre os estudos do Java, utilizando a plataforma de e
 - [X] Heranças, Interfaces e Polimorfismo (HIP)
 - [X] Coleções, Wrappers e Lambda Expressions (CWLE)
 - [X] Streams, Readers e Writers (SRW)
-- [ ] Listas, Sets e Mapas (LSM)
+- [X] Listas, Sets e Mapas (LSM)
 
 Como identificado acima, cada curso disponibilizado no Alura fará parte de uma pasta neste repositório.
 
@@ -36,3 +36,10 @@ Como identificado acima, cada curso disponibilizado no Alura fará parte de uma 
 - UNICODE
 - Charset class
 - Método getBytes da classe String
+
+- Set
+- HashSet
+- LinkedHashSet
+- TreeSet
+- Map
+- HashMap
